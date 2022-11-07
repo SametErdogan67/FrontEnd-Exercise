@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            border: 1px solid red;
+            margin: 30px;
+            padding: 15px;
+            background-color: blanchedalmond;
+            padding-left: 50px;
+        }
+
+        p{
+            border: 2px dashed blue;
+            margin: 30px;
+            padding: 20px;
+            background-color: beige;
+        }
+        .border{
+            border: 2px solid red;
+            width: 300px ;
+            background-color: rgb(139, 197, 190);
+            text-align: center;
+            margin: auto;
+             }
+        .inherit-parent{
+            border: 1px solid blue;
+            margin-left: 100px ;
+        }
+
+        .inherit-child{
+            margin-left: inherit;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h2>Margin Özellikleri</h2>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque possimus nihil quaerat dolorem optio nemo voluptatibus repellendus, aliquid hic dolore modi at temporibus voluptatem doloribus nesciunt doloremque repudiandae? Aperiam error quasi non voluptas unde doloremque dolore eos dolores optio consequuntur.</p>
+    </div>
+
+        <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem ipsum natus minus odit veritatis atque id dolor error, rem modi, magni quam porro hic nobis. Sequi laboriosam alias veniam eum?</p>
+
+    <div class="border">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad voluptatem recusandae earum provident. Vero quod iusto nam dignissimos nemo illo ipsa. Dolores perspiciatis facere recusandae.
+    </div>
+
+    <!-- Inherit Kullanımı -->
+
+    <h2>Inherit Kullanımı</h2>
+    <div class="inherit-parent">
+        <p class="inherit-child">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, aut!</p>
+    </div>
+    </body>
+</html>
