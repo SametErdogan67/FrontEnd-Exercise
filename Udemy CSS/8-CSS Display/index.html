@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .imgbox{
+        float: left;
+        border: 1px solid gray;
+        margin: 4px;
+        padding: 6px;
+        width: 150px;
+      }
+
+      button{
+        width: 100%;
+      }
+    </style>
+</head>
+<body>
+   <div class="imgbox" id="imgbox1" >Resim 1 <br>
+        <img src="/Udemy CSS/8-CSS Display/img/resim1.jpg" style="width: 100%" alt="">
+        <button onclick="removeelement()">
+            Kaldır
+        </button>
+   </div>
+
+   <div class="imgbox" id="imgbox2">Resim 2 <br>
+        <img src="/Udemy CSS/8-CSS Display/img/resim2.png" style="width: 100%" alt="">
+        <button onclick="changeVisibility()">
+            Gizle
+        </button>
+   </div>
+   
+   <div class="imgbox" id="imgbox3">Resim 3 <br>
+        <img src="/Udemy CSS/8-CSS Display/img/resim3.png" style="width: 100%" alt="">
+        <button onclick="resetElement()">
+            Resetle
+        </button>
+   </div>
+   <script>
+        function removeelement(){
+            document.getElementById("imgbox1").style.display="none";        
+        }
+        function changeVisibility(){
+            document.getElementById("imgbox2").style.visibility="hidden";
+        }
+        function resetElement(){
+            document.getElementById("imgbox1").style.display="block";
+            document.getElementById("imgbox2").style.visibility="visible";
+
+
+        }
+   </script>
+</body>
+</html>
