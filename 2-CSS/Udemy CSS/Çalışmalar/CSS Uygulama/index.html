@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samet Erdoğan</title>
+    <style>
+        
+        *{
+            box-sizing: border-box;
+        }
+        .divHeader{
+            background-color: rgb(213, 210, 210);
+            text-align: center;
+            padding: 15px;
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: black;
+        }
+        .navbar a{
+            padding:15px 17px;
+            float: left;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar a:hover{
+            background-color: gray;
+        }
+        .column{
+            float: left;
+            padding: 15px;
+            
+        }
+
+        .column.side{
+            width: 25%;
+        }
+        .column.main-content{
+            width: 50%;
+        }
+
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            text-align: center;
+            padding: 15px;
+            background-color: gainsboro;
+        }
+
+        @media screen and (max-width: 600px) {
+            .column.side{
+                width: 100%;
+            }
+            .column.main-content{
+                width: 100%;
+            }            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="divHeader">
+        <h1 class="h1Header">Header</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+
+    <div class="navbar">
+        
+            <a href="#link1">Link 1</a>
+            <a href="#link1">Link 2</a>
+            <a href="#link1">Link 3</a>
+        </ul>
+    </div>
+       
+    <div class="row">
+        <div class="column side ">
+            <h2>Side</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, corrupti?</p>
+        </div>
+
+
+        <div class="column main-content">
+            <h2>Main Content</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos sequi incidunt quae officia a id impedit illum quo, expedita cumque rerum nemo harum sint dignissimos repellendus necessitatibus architecto inventore ipsum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos exercitationem laudantium ex. Sed ullam, dolore quia repudiandae illum facilis quasi enim distinctio saepe ipsa amet iusto necessitatibus animi ad culpa?</p>
+        </div>
+
+        <div class="column side">
+            <h2>Side</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, labore.</p>
+        </div>
+    </div>
+
+
+    <footer>
+        <h3>Footer</h3>
+    </footer>
+</body>
+</html>
