@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Bilgiler Formu</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(183, 248, 248);
+        }
+
+        form{
+            background-color: gainsboro;
+            border: 2px solid black;
+            display: block;
+            margin: 50px auto;
+            padding: 30px;
+            max-width: 500px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .form-control{
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .form-control label{
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .form-control input, 
+        .form-control select, 
+        .form-control textarea{
+            border: 1px solid cyan;
+            border-radius: 3px;
+            padding: 10px;
+            display: block; 
+            width: 95%;      
+         }
+
+         button{
+            background-color: cyan;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 20px;
+            width: 100%;
+            margin-bottom: 20px;
+         }
+
+    </style>
+</head>
+<body>
+    <h1>Başvuru Formu</h1>
+
+    <form>
+        <div class="form-control">
+            <label for="İsim">İsim
+                <input type="text" id="name" placeholder="İsminizi Giriniz">
+            </label>
+
+            <label for="Soyisim">Soyisim
+                <input type="text" id="surname" placeholder="Soyisminizi Giriniz">
+            </label>
+            
+            <label for="Email">Email Adresi
+                <input type="text" id="e-mail" placeholder="Email Adresinizi Giriniz">
+            </label>
+
+            <label for="Telefon">Telefon
+                <input type="text" id="phone" placeholder="Telefon Numaranızı Giriniz">
+            </label>
+
+        </div>
+
+        <div class="form-control">
+            <label for="Mesaj">Mesaj</label>
+            <textarea name="comment" id="comment" placeholder="Mesajınızı Giriniz"></textarea>
+        </div>
+
+        <button type="submit" value="submit">Submit</button>
+    </form>
+    
+         
+                
+            
+   
+</body>
+</html>
